@@ -34,8 +34,8 @@ Adicione os scripts abaixo ao seu `package.json`:
 ```json
 {
   "scripts": {
-    "deploy": "bash docker/deploy.sh",
-    "server": "bash docker/server.sh"
+    "docker:deploy": "bash docker/deploy.sh",
+    "docker:server": "bash docker/server.sh"
   }
 }
 ```
@@ -44,7 +44,7 @@ Adicione os scripts abaixo ao seu `package.json`:
 
 ## 🛠 Comandos Disponíveis
 
-### 🚀 `yarn deploy`
+### 🚀 `yarn docker:deploy`
 
 Utilizado para publicar a aplicação em ambientes remotos.
 
@@ -62,7 +62,7 @@ Utilizado para publicar a aplicação em ambientes remotos.
 
 ---
 
-### 🧪 `yarn server`
+### 🧪 `yarn docker:server`
 
 Utilizado para desenvolvimento e validação local.
 
@@ -82,5 +82,5 @@ Utilizado para desenvolvimento e validação local.
 
 | Comando       | Ambiente  | Descrição                            |
 | ------------- | --------- | ------------------------------------ |
-| `yarn server` | 🧪 Local  | Sobe o container para testes rápidos |
-| `yarn deploy` | 🚀 Remoto | Publica a versão estável             |
+| `yarn docker:server` | 🧪 Local  | Sobe o container para testes rápidos |
+| `yarn docker:deploy` | 🚀 Remoto | Publica a versão estável             |
