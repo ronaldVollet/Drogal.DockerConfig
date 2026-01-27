@@ -4,7 +4,7 @@ set -e
 # ======================
 # Variáveis
 # ======================
-PROJECT_NAME="drogal-360-front"
+PROJECT_NAME="drogal-cliente-agenda-front"
 IMAGE_NAME="drg/${PROJECT_NAME}"
 TAG="${TAG:-latest}"
 PLATFORM="${PLATFORM:-linux/amd64}"

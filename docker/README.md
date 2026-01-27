@@ -22,6 +22,7 @@ Antes de utilizar os scripts, **é obrigatório ajustar o nome do projeto** nos 
 
 * `docker/deploy.sh`
 * `docker/server.sh`
+* `docker/save.sh`
 
 Isso garante que o nome da imagem seja gerado corretamente.
 
@@ -35,7 +36,8 @@ Adicione os scripts abaixo ao seu `package.json`:
 {
   "scripts": {
     "docker:deploy": "bash docker/deploy.sh",
-    "docker:server": "bash docker/server.sh"
+    "docker:server": "bash docker/server.sh",
+    "docker:save": "bash docker/save.sh"
   }
 }
 ```
@@ -84,3 +86,4 @@ Utilizado para desenvolvimento e validação local.
 | ------------- | --------- | ------------------------------------ |
 | `yarn docker:server` | 🧪 Local  | Sobe o container para testes rápidos |
 | `yarn docker:deploy` | 🚀 Remoto | Publica a versão estável             |
+| `yarn docker:save` | 🧪 Local | Gera uma imagem do container            |
